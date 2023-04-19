@@ -3437,6 +3437,12 @@ ul.contact-info li a {
 .m-services-content img.left {
     margin-left: 120px;
 }
+.m-gallery-imgs img {
+    max-width: 420px;
+}
+.m-gallery-imgs img.scnd {
+    max-width: 320px;
+}
 .m-banner.banner-galeria {
     background: url(./assets/img/background-banner-gallery.png) no-repeat center center;
     width: 100%;

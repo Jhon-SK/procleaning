@@ -28,7 +28,7 @@ $('.m-text-slide').slick({
 });
 
 $('.m-gallery-imgs').slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     infinite: false,
     slidesToScroll: 1,
     dots: false,
