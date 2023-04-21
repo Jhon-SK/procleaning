@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <title>Document</title>
     	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/meanmenu.css">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="assets/css/slick-theme.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
 		<div class="header-top-menu-area">
@@ -24,7 +24,7 @@
 				<div class="row">
 					<!-- logo start -->
 					<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 logo-start">
-						<div class="header-logo">
+						<div class="header-logo wow">
 							<a href="index.html"><img src="assets/img/proclean-logo.png" alt="logo" class="img-fluid"></a>
 						</div>
 					</div>
@@ -34,17 +34,21 @@
 							<div class="main-menu">
 								<nav id="mobile-menu">
 									<ul class="header-sub-area">
-										<li><a href="">Inicio <span class="line"></span></a></li>
-										<li><a href="">Servicios</a></li>
-										<li><a href="">Galería</a></li>
-										<li><a href="">Contacto</a></li>
+										<li><a href="/">Inicio <span class="line"></span></a></li>
+										<li><a href="/servicios.html">Servicios</a></li>
+										<li><a href="/galeria.html">Galería</a></li>
+										<li><a href="/contacto.html">Contacto</a></li>
 									</ul>
 								</nav>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 p-0">
-						<div class="mobile-menu"></div>
+						<div class="mobile-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 					<!-- main menu area end -->
 				</div>
@@ -60,23 +64,23 @@
 		  </section>
 		  <section>
 <div class="m-services">
-				<h1 class="m-service-title">SERVICIOS</h1>
+				<h1 class="m-service-title wow fadeInUp">SERVICIOS</h1>
 				<div class="m-service-content">
-					<div class="m-service-info">
+					<div class="m-service-info wow fadeInLeft">
 						<span class="m-service-sub">Limpieza</span>
 						<div>
 							<img class="m-service-img" src="./assets/img/img-service-limpieza.png" alt="img">
 						</div>
 						<button class="m-service-btn">VER MÁS</button>
 					</div>
-					<div class="m-service-info">
+					<div class="m-service-info wow fadeInUp">
 						<span class="m-service-sub fum">Fumigación</span>
 						<div>
 							<img class="m-service-img" src="./assets/img/img-service-fumigacion.png" alt="">
 						</div>
 						<button class="m-service-btn fum">VER MÁS</button>
 					</div>
-					<div class="m-service-info">
+					<div class="m-service-info wow fadeInRight">
 						<span class="m-service-sub garden">Jardinería</span>
 						<div>
 							<img class="m-service-img" src="./assets/img/img-service-jardineria.png" alt="">
@@ -88,20 +92,20 @@
 		  </section>
 		  <section>
 			<div class="m-about">
-				<h1 class="m-about-title">SOBRE NOSOTROS</h1>
-				<p class="m-about-text">ProCleaning Services es una empresa conformada por personal capacitado en limpieza,
+				<h1 class="m-about-title wow fadeInUp">SOBRE NOSOTROS</h1>
+				<p class="m-about-text wow fadeInUp">ProCleaning Services es una empresa conformada por personal capacitado en limpieza,
 					jardinería y fumigación; buscando brindar un servicio de calidad, confianza y exclusivo a
 					todos nuestros clientes.
 					</p>
 				<div class="m-about-content">
-					<div class="m-about-ball">
+					<div class="m-about-ball wow fadeInLeft">
 						<span class="m-title">VISIÓN</span>
 						<p class="m-content">Posicionarnos como una empresa líder en nuestros sectores, reconocidos por ofrecer un trabajo profesional y de calidad en nuestros servicios de limpieza, jardinería y fumigación a nivel nacional.</p>
 					</div>
 					<div>
-						<img src="./assets/img/img-about-dart.png" alt="img">
+						<img class="wow fadeInUp" src="./assets/img/img-about-dart.png" alt="img">
 					</div>
-					<div class="m-about-ball">
+					<div class="m-about-ball wow fadeInRight">
 						<span class="m-title">MISIÓN </span>
 						<p class="m-content">Brindar un servicio de calidad y personalizado con la finalidad de superar las expectativas
 							de nuestros clientes con un personal altamente capacitado utilizando productos de la
@@ -113,21 +117,21 @@
 		  </section>
 		  <section>
 			<div class="m-values m-banner banner-valores">
-				<h1 class="m-values-title">VALORES</h1>
+				<h1 class="m-values-title wow fadeInUp">VALORES</h1>
 				<div class="m-values-content">
-					<div class="m-item">
+					<div class="m-item wow fadeInLeft">
 						<img src="./assets/img/img-confianza.png" alt="confianza">
 						<p class="m-value">Confianza</p>
 					</div>
-					<div class="m-item">
+					<div class="m-item wow fadeInLeft">
 						<img src="./assets/img/img-quality.png" alt="quality">
 						<p class="m-value">Trabajo de calidad</p>
 					</div>
-					<div class="m-item">
+					<div class="m-item wow fadeInRight">
 						<img src="./assets/img/img-responsibility.png" alt="responsibility">
 						<p class="m-value">Responsabilidad</p>
 					</div>
-					<div class="m-item">
+					<div class="m-item wow fadeInRight">
 						<img src="./assets/img/img-exclusivity.png" alt="exclusivity">
 						<p class="m-value">Exclusividad</p>
 					</div>
@@ -136,8 +140,8 @@
 		  </section>
 		  <section style="margin-top:0px;">
 			<div class="m-last">
-				<img src="./assets/img/img-limpieza.png" alt="img">
-				<div class="m-info">
+				<img class="wow fadeInLeft" src="./assets/img/img-limpieza.png" alt="img">
+				<div class="m-info wow fadeInRight">
 					<p>Más que una necesidad, nuestro servicio de aseo es una experiencia de de bienestar.</p>
 				</div>
 			</div>
@@ -200,5 +204,9 @@
 		<div class="floating-wsp">
 			<a href="https://wa.me/51999123456" target="_blank"><img src="./assets/img/icon-wsp.svg" alt=""></a>
 		</div>
+		<script src="./assets/js/wow.min.js"></script>
+		<script type="text/javascript">
+			new WOW().init()
+		  </script>
 </body>
 </html>

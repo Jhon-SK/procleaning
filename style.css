@@ -61,8 +61,15 @@
     font-display: swap;
   }
   @font-face {
+    font-family: Quicksand;
+    src: url(./assets/font/Quicksand-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
     font-family: CenturyGothic;
-    src: url(./assets/fonts/CenturyGothic.ttf);
+    src: url(./assets/font/CenturyGothic.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -162,7 +169,7 @@ ul {margin: 0;
 
 li {
     margin-bottom: 10px;
-    font-family: 'BebasKai', sans-serif;
+    font-family: 'Quicksand';
 }
 
 p {
@@ -3441,7 +3448,8 @@ ul.contact-info li a {
     max-width: 420px;
 }
 .m-gallery-imgs img.scnd {
-    max-width: 320px;
+    max-width: 420px;
+    height: 280px;
 }
 .m-banner.banner-galeria {
     background: url(./assets/img/background-banner-gallery.png) no-repeat center center;
@@ -3470,7 +3478,7 @@ ul.contact-info li a {
 .m-banner.banner-servicios-fondo {
     background: url(./assets/img/background-banner-services-fondo.png) no-repeat center center;
     width: 100%;
-    height: 2250px;
+    height: 1754px;
     background-size: cover;
     padding: 40px 0;
 }
@@ -3487,6 +3495,167 @@ ul.contact-info li a {
     width: 100%;
     max-width: 1170px;
     height: inherit;
+}
+.m-container-galery{
+    margin: auto;
+    width: 100%;
+    max-width: 989px;
+    height: inherit;
+}
+.m-gallery-imgs{
+    width: 900px;
+    margin: 50px auto;
+}
+.m-gallery-content{
+
+font-size: 26px;
+
+margin-top: 18px;
+}
+.m-gallery-title{
+
+font-size: 50px;
+
+margin-top: 10px;
+
+display: flex;
+
+align-items: flex-end;
+
+line-height: 43px;
+}
+.m-gallery-content.first{
+
+color: #00B3DF;
+}
+.m-gallery-content.second{
+    
+color: #1D4389;
+}
+.m-gallery-content.third{
+    
+color: #E87722;
+}
+.m-gallery-content.four{
+    
+color: #37AD68;
+}
+.m-gallery-title.first{
+
+color: #00B3DF;
+}
+.m-gallery-title.second{
+
+color: #1D4389;
+}
+.m-gallery-title.third{
+
+color: #E87722;
+}
+.m-gallery-title.four{
+    
+color: #37AD68;
+}
+.m-gallery-title.first::after{content: '';background: url(./assets/img/icon-maquina.svg)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;}
+.m-gallery-title.second::after{
+    content: '';
+    content: '';background: url(./assets/img/icon-limpieza.png)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;
+}
+.m-gallery-title.third::after{
+    content: '';
+    content: '';background: url(./assets/img/icon-fumigacion.png)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;
+}
+.m-gallery-title.four::after{
+    content: '';
+    content: '';background: url(./assets/img/icon-jardineria.png)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;
+}
+.m-gallery-imgs .slick-next, .m-gallery-imgs .slick-prev{
+    background-color: #1D428A;
+    top: 50%;
+}
+.m-gallery-imgs .slick-next{
+
+right: -109px;
+} 
+.m-gallery-imgs .slick-prev{
+
+left: -127px;
+}
+.container-contact{
+    width: 100%;
+    max-width: 731px;
+    margin: auto;
+}
+.container-contact h2{
+    font-size: 16px;
+    text-align: center;
+}
+.m-form{
+    
+width: 425px;
+    
+height: 588px;
+    
+background: #FFFFFF;
+    
+border-radius: 20px;
+    
+filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.25));
+    
+padding: 29px 82px 16px 82px;
+    
+background-image: url(./assets/img/border-form.png);
+    
+background-repeat: no-repeat;
+    
+overflow: auto;
+}
+.m-form h2{
+    font-size: 32px;
+    color: #ffffff;
+}
+.m-form form{
+    margin: 52px 0 0 0;
+}
+.m-form input{
+    background: #FFFFFF;
+    border: 1px solid #9AADD2;
+    border-radius: 7px;
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #414141;
+}
+.m-form textarea{
+    background: #FFFFFF;
+    border: 1px solid #9AADD2;
+    border-radius: 7px;
+    width: 100%;
+    height: 85px;
+    padding: 4px 10px;
+}
+.m-form label{
+    
+font-size: 16px;
+    
+margin-bottom: 7px;
+}
+.m-form form fieldset{
+
+display: inline-block;
+
+margin: 8px 0;
+
+width: 100%;
+}
+.btn-circl{
+    background: #1D4389;
+border-radius: 20px;
+font-size: 18px;
+color: #ffffff;
+display: block;
+margin: auto;
 }
 .banner-content {
     display: -webkit-box;
@@ -3509,16 +3678,52 @@ ul.contact-info li a {
     width: max-content;
     margin: auto;
 }
+.contact-content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 43px 0 35px 0;
+}
 .m-service-title {
     font-size: 45px;
     color: #1D428A;
     text-align: center;
+    font-family: 'Quicksand';
+}
+.contact-list{
+
+}
+.contact-list li{
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+}
+.contact-list li::before{
+    content: '';
+}
+.contact-list li:nth-child(1)::before{
+    background: url(./assets/img/icon-phone.png) no-repeat center center;
+    width: 39px;
+    height: 39px;
+    margin-right: 16px;
+}
+.contact-list li:nth-child(2)::before{
+    background: url(./assets/img/icon-msg.png);
+    width: 39px;
+    height: 30px;
+    margin-right: 16px;
+}
+.contact-list li:nth-child(3)::before{
+    background: url(./assets/img/icon-ubicacion.png);
+    width: 39px;
+    height: 51px;
+    margin-right: 16px;
 }
 .m-service-sub {
     text-align: center;
     color: #00B3DF;
     font-size: 26px;
-    font-family: 'BebasKai', sans-serif;
+    font-family: 'Quicksand';
 }
 .m-service-sub.fum {
     color: #E87722;
@@ -3538,7 +3743,7 @@ ul.contact-info li a {
     border-radius: 20px;
     font-size: 18px;
     color: #FFFFFF;
-    font-family: 'BebasKai', sans-serif;
+    font-family: 'Quicksand';
 }
 .m-service-btn.fum {
     background: #E87722;
@@ -3569,12 +3774,13 @@ ul.contact-info li a {
     color: #1D428A;
     font-size: 32px;
     font-weight: 700;
+    font-family: 'Quicksand';
 }
 .m-about-text {
     width: 697px;
     font-size: 16px;
     margin: 40px auto 60px;
-    font-family: 'BebasKai', sans-serif;
+    font-family: 'CenturyGothic'
 }
 .m-about-ball {
     width: 295px;
@@ -3585,21 +3791,20 @@ ul.contact-info li a {
 }
 .m-about-ball .m-title {
     font-size: 32px;
-line-height: 21px;
-text-align: center;
-color: #FFFFFF;
-font-family: 'BebasKai', sans-serif;
-
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Quicksand';
 }
 .m-about-ball .m-content {
     font-size: 16px;
-line-height: 21px;
-margin: auto;
-width: 251px;
-text-align: center;
-font-family: 'BebasKai', sans-serif;
-color: #FFFFFF;
-margin-top: 10px;
+    line-height: 21px;
+    margin: auto;
+    width: 251px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-family: 'Quicksand';
 }
 .m-about img {
     margin: auto 50px;
@@ -3608,6 +3813,7 @@ margin-top: 10px;
     font-size: 38px;
     color: #1D4389;
     font-weight: 600;
+    font-family: 'Quicksand';
 }
 .m-values-content {
     display: flex;
@@ -3616,12 +3822,16 @@ margin-top: 10px;
 }
 .m-values-content .m-item {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .m-values-content .m-item .m-value {
     font-size: 18px;
     color: #1D4389;
     font-weight: 400;
     margin-top: 40px;
+    font-family: 'CenturyGothic';
 }
 .m-last {
     margin: auto;
@@ -3729,7 +3939,7 @@ footer .copy {
 .slick-prev {
     background: url("./assets/img/arrow-prev.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 12px 8px;
 }
 .slick-next, .slick-prev {
     background-color: #00B3DF;
@@ -3981,6 +4191,9 @@ span.line {
     .laundryka-services-area h2 {
         text-align: center;
     }
+    .main-menu-area{
+        display: none;
+    }
     .row-client {
         display: block;
     }
@@ -4016,10 +4229,127 @@ span.line {
     .logo-start {
         padding:0px;
     }
-    .header-logo a img {
-        max-width: 20%;
-        margin-left: 20px;
+    .header-logo{
+        margin: 0!important;
     }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        height: 25px;
+        justify-content: space-between;
+    }
+    .m-about-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .m-about img{
+        display: none;
+    }
+    .m-about-ball{
+        background: transparent;
+        border-radius: none;
+        width: 360px;
+        height: 227px;
+    }
+    .m-about-ball .m-title{
+        color: #1D4389;
+    }
+    .m-about-ball .m-title::after{
+        content: '';
+    }
+    .m-about-ball .m-content{
+        color: #5A5A5A;
+        width: 360px;
+    }
+    .m-values-content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 360px;
+    }
+    .m-values-title{
+        font-size: 26px;
+    }
+    .m-values-content .m-item{
+        margin: 0;
+    }
+    .m-values-content .m-item img{
+width: 52%;
+    }
+    .m-values-content .m-item .m-value{
+        margin-top: 11px;
+    }
+    .m-banner.banner-valores{
+        height: 320px;
+    }
+    .m-info p{
+        padding: 16px;
+        font-size: 16px;
+    }
+    .row{
+
+display: flex;
+
+flex-direction: row;
+
+flex-wrap: nowrap;
+
+width: 100%;
+
+align-items: center;
+
+justify-content: space-between;
+
+margin: 0;
+}
+.col-12{
+    
+width: unset;
+}
+.header-top-menu-area{
+    
+padding: 10px 0;
+}
+.m-banner.banner-benefics {
+    background: url(./assets/img/background-banner-inicio-mob.png) no-repeat center center;
+    width: 100%;
+    height: 217px;
+    background-size: cover;
+}
+.m-service-content{
+    flex-direction: column;
+}
+.m-about{
+    width: 360px;
+}
+.m-about-text{
+    width: 360px;
+}
+    .mobile-menu span{
+        
+width: 33.33px;
+        
+height: 5.56px;
+        
+background: #1D4389;
+        
+border-radius: 4px;
+        
+display: inline-block;
+    }
+    .m-last img{
+        width: 200px;
+    }
+    .m-info{
+
+width: 160px;
+
+height: 160px;
+
+margin: 75px;
+
+    }
+    
     .header-top-area .container .row div.header-left {
         text-align:left;
         margin-left: 0;

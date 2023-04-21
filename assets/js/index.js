@@ -33,7 +33,7 @@ $('.m-gallery-imgs').slick({
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    centerMode: true,
+    centerMode: false,
     centerPadding: '0px',
     responsive: [
         {

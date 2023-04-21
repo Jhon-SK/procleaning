@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <title>Document</title>
     	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/meanmenu.css">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="./assets/css/slick-theme.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
 		<div class="header-top-menu-area">
@@ -34,10 +34,10 @@
 							<div class="main-menu">
 								<nav id="mobile-menu">
 									<ul class="header-sub-area">
-										<li><a href="">Inicio</a></li>
-										<li><a href="">Servicios <span class="line"></span></a></li>
-										<li><a href="">Galería</a></li>
-										<li><a href="">Contacto</a></li>
+										<li><a href="/">Inicio</a></li>
+										<li><a href="/servicios.html">Servicios <span class="line"></span></a></li>
+										<li><a href="/galeria.html">Galería</a></li>
+										<li><a href="contacto.html">Contacto</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -59,10 +59,10 @@
 			</div>
 		  </section>
           <section>
-            <h1 class="m-services-title">NUESTROS SERVICIOS</h1>
+            <h1 class="m-services-title wow fadeInUp">NUESTROS SERVICIOS</h1>
             <div class="m-banner banner-servicios-fondo">
                 <div class="m-services-content">
-                    <div class="m-services-body">
+                    <div class="m-services-body wow fadeInLeft">
                         <span class="m-services-subtitle">Limpieza Industrial</span>
                         <div class="m-text-slide">
                                 <p>El servicio de limpieza industrial se basa en el mantenimiento de
@@ -80,11 +80,11 @@ los artículos que se almacenan.
                           
                         </div>
                     </div>
-                    <img class="left" src="./assets/img/img-services-industrial.png" alt="industrial">
+                    <img class="left wow fadeInRight" src="./assets/img/img-services-industrial.png" alt="industrial">
                 </div>
                 <div class="m-services-content">
-                    <img src="./assets/img/img-services-domestic.png" alt="domestic">
-                    <div class="m-services-body">
+                    <img class="wow fadeInLeft" src="./assets/img/img-services-domestic.png" alt="domestic">
+                    <div class="m-services-body wow fadeInRight">
                         <span class="m-services-subtitle" style="color: #1D4389;">Limpieza doméstica</span>
                         <div class="m-text-slide domestica">
                             <p>Brindamos un eficiente servicio de limpieza integral de todo tipo de
@@ -104,7 +104,7 @@ los artículos que se almacenan.
                     </div>
                 </div>
                 <div class="m-services-content">
-                    <div class="m-services-body">
+                    <div class="m-services-body wow fadeInLeft">
                         <span class="m-services-subtitle" style="color: #E87722;">Fumigación</span>
                         <div class="m-text-slide fumigacion">
                             <p>Realizamos tratamientos de fumigación que tienen como
@@ -118,11 +118,11 @@ los artículos que se almacenan.
                                     cuales representan un peligro potencial para la salud y bienestar de las personas.</p>
                         </div>
                     </div>
-                    <img class="left" src="./assets/img/img-services-fumigacion.png" alt="fumigacion">
+                    <img class="left wow fadeInRight" src="./assets/img/img-services-fumigacion.png" alt="fumigacion">
                 </div>
                 <div class="m-services-content">
-                    <img src="./assets/img/img-services-garden.png" alt="Jardinería">
-                    <div class="m-services-body">
+                    <img class="wow fadeInLeft" src="./assets/img/img-services-garden.png" alt="Jardinería">
+                    <div class="m-services-body wow fadeInRight">
                         <span class="m-services-subtitle" style="color: #37AD68;">Jardinería</span>
                         <div class="m-text-slide jardineria">
                             <p>En ProCleaning consideramos que el mantenimiento de las áreas verdes es
@@ -201,6 +201,10 @@ los artículos que se almacenan.
 
         <script type="text/javascript" src="./assets/js/slick.min.js"></script>       
          <script type="text/javascript" src="./assets/js/index.js"></script>
+		 <script src="./assets/js/wow.min.js"></script>
+		<script type="text/javascript">
+			new WOW().init()
+		  </script>
 
 </body>
 </html>

@@ -246,7 +246,7 @@
 @media (min-width:361px) and (max-width:575px) {
     .header-logo {
         margin: 32px 0 0;
-        display: inline-block
+        display: inline-block;
     }
 
     .header-top-btn {
