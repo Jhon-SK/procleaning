@@ -3413,13 +3413,14 @@ ul.contact-info li a {
     color: #1D428A;
     font-weight: 700;
     margin-bottom: 50px;
+    font-family: 'QuickSand';
 }
 .m-services-subtitle {
     font-size: 32px;
     text-align: center;
     color: #00B3DF;
     font-weight: 700;
-    font-family: 'BebasKai', sans-serif;
+    font-family: 'QuickSand';
 }
 .m-services-content {
     display: flex;
@@ -3436,6 +3437,7 @@ ul.contact-info li a {
 .m-services-body p {
     font-size: 16px;
     color: #000;
+    font-family:'CenturyGothic';
 }
 .m-services-content img {
     margin: auto;
@@ -3460,7 +3462,7 @@ ul.contact-info li a {
 .m-banner.banner-contacto {
     background: url(./assets/img/background-banner-contact.png) no-repeat center center;
     width: 100%;
-    height: 366px;
+    height: 371px;
     background-size: cover;
 }
 .m-banner.banner-benefics {
@@ -3511,6 +3513,8 @@ ul.contact-info li a {
 font-size: 26px;
 
 margin-top: 18px;
+font-family: 'Quicksand';
+
 }
 .m-gallery-title{
 
@@ -3523,6 +3527,8 @@ display: flex;
 align-items: flex-end;
 
 line-height: 43px;
+font-family: 'Quicksand';
+font-weight: 700;
 }
 .m-gallery-content.first{
 
@@ -3556,18 +3562,40 @@ color: #E87722;
     
 color: #37AD68;
 }
-.m-gallery-title.first::after{content: '';background: url(./assets/img/icon-maquina.svg)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;}
+.m-gallery-title.first::after{
+    content: '';
+    background: url(./assets/img/icon-maquina.svg)no-repeat center center;
+    width: 78px;
+    height: 68px;
+    display: inline-block;
+    margin-left: 21px;
+}
 .m-gallery-title.second::after{
     content: '';
-    content: '';background: url(./assets/img/icon-limpieza.png)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;
+    content: '';
+    background: url(./assets/img/icon-limpieza.png)no-repeat center center;
+    width: 78px;
+    height: 68px;
+    display: inline-block;
+    margin-left: 21px;
 }
 .m-gallery-title.third::after{
     content: '';
-    content: '';background: url(./assets/img/icon-fumigacion.png)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;
+    content: '';
+    background: url(./assets/img/icon-fumigacion.png)no-repeat center center;
+    width: 78px;
+    height: 68px;
+    display: inline-block;
+    margin-left: 21px;
 }
 .m-gallery-title.four::after{
     content: '';
-    content: '';background: url(./assets/img/icon-jardineria.png)no-repeat center center;width: 78px;height: 68px;display: inline-block;margin-left: 21px;
+    content: '';
+    background: url(./assets/img/icon-jardineria.png)no-repeat center center;
+    width: 78px;
+    height: 68px;
+    display: inline-block;
+    margin-left: 21px;
 }
 .m-gallery-imgs .slick-next, .m-gallery-imgs .slick-prev{
     background-color: #1D428A;
@@ -3613,6 +3641,8 @@ overflow: auto;
 .m-form h2{
     font-size: 32px;
     color: #ffffff;
+    font-family: 'Quicksand';
+    font-weight: 700;
 }
 .m-form form{
     margin: 52px 0 0 0;
@@ -3640,6 +3670,8 @@ overflow: auto;
 font-size: 16px;
     
 margin-bottom: 7px;
+font-family: 'CenturyGothic';
+color: #000;
 }
 .m-form form fieldset{
 
@@ -3804,7 +3836,7 @@ margin: auto;
     text-align: center;
     color: #FFFFFF;
     margin-top: 10px;
-    font-family: 'Quicksand';
+    font-family: 'CenturyGothic';
 }
 .m-about img {
     margin: auto 50px;
@@ -3822,9 +3854,9 @@ margin: auto;
 }
 .m-values-content .m-item {
     margin: auto;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 .m-values-content .m-item .m-value {
     font-size: 18px;
@@ -3904,6 +3936,7 @@ footer .m-container {
 footer .copy {
     width: 163px;
     font-size: 12px;
+    margin: auto;
 }
 .floating-wsp {
     position: fixed;
@@ -4135,10 +4168,18 @@ section {
 .blog-img-date .img-mob {
     display: none;
 }
+
+.social-mob {
+    display: flex;
+    margin: auto;
+    margin-left: 0px;
+}
 .btn-submit{
     width: 175px;
     height: 48px;
     padding: 8px 16px;
+    font-family: 'Quicksand';
+    font-weight: 700;
 }
 .row-client {
     display: flex;
@@ -4165,6 +4206,23 @@ span.line {
     background: #1D428A;
     border-radius: 5px;
 }
+.m-footer-top .icon {
+    margin-right: 5px;
+}
+
+.line.mob {
+    display: none;
+}
+
+img.mob {
+    display: none;
+}
+.m-contacto-subtittle {
+    font-family: 'CenturyGothic';
+}
+.m-contacto-subtittle.mob {
+    display: none;
+}
 @media (max-width: 360px) {
 
 }
@@ -4188,6 +4246,89 @@ span.line {
     }
 }
 @media (max-width: 768px) {
+    .m-contacto-subtittle.desk {
+        display: none;
+    }
+    .m-contacto-subtittle.mob {
+        display: block;
+        margin: 40px 0 10px;
+    }
+    .contact-list li:nth-child(1)::before{
+        background: url(./assets/img/icon-phone.png) no-repeat center center;
+        background-size: 21px 21px;
+        margin-right: 0px;
+    }
+    .contact-list li:nth-child(2)::before{
+        background: url(./assets/img/icon-msg.png) no-repeat center center;
+        background-size: 20px 15px;
+        margin-right: 0px;
+    }
+    .contact-list li:nth-child(3)::before{
+        background: url(./assets/img/icon-ubicacion.png) no-repeat center center;
+        background-size: 16px 21px;
+        margin-right: 0px;
+    }
+    .contact-list li {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .contact-content {
+        flex-direction:column-reverse;
+        margin: 20px;
+    }
+    .m-gallery-title.first::after {
+        background-size: 46px 40px;
+        position: relative;
+        top: 6px;
+    }
+    .m-gallery-title.second::after {
+        background-size: 39px 39px;
+        position: relative;
+        top: 6px;
+    }
+    .m-gallery-title.third::after {
+        background-size: 39px 39px;
+        position: relative;
+        top: 6px;
+    }
+    .m-gallery-title.four::after {
+        background-size: 39px 39px;
+        position: relative;
+        top: 6px;
+    }
+    .m-gallery-title {
+        font-size: 26px;
+    }
+    .m-gallery-content {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .m-gallery-imgs {
+        margin:20px auto;
+        width: 100%;
+        text-align: center;
+    }
+    .m-gallery-imgs .slick-next {
+        right: 10px;
+    }
+    .m-gallery-imgs img {
+        max-width: 250px;
+    }
+    .m-gallery-imgs img.scnd {
+        max-width: 150px;
+        max-height: 167px;
+    }
+    img.desk {
+        display: none;
+    }
+    img.mob {
+        display: block;
+    }
+    .floating-wsp {
+        right: 20px;
+        bottom: 20px;
+    }
     .laundryka-services-area h2 {
         text-align: center;
     }
@@ -4252,8 +4393,17 @@ span.line {
         width: 360px;
         height: 227px;
     }
+    .m-service-title {
+        font-weight: 800;
+    }
     .m-about-ball .m-title{
         color: #1D4389;
+        font-weight: 800;
+    }
+    .line.mob {
+        display: block;
+        width: 105px;
+        margin: auto;
     }
     .m-about-ball .m-title::after{
         content: '';
@@ -4261,26 +4411,66 @@ span.line {
     .m-about-ball .m-content{
         color: #5A5A5A;
         width: 360px;
+        padding: 10px;
     }
     .m-values-content{
         display: flex;
         flex-wrap: wrap;
         width: 360px;
+        margin: auto
+    }
+    .m-services-subtitle {
+        font-size: 26px;
+    }
+    .m-services-content{
+        display: block;
+        margin: 30px auto;
+    }
+    .m-services-content img {
+        max-width: 229px;
+        margin: auto;
+    }
+    .m-services-body p {
+        padding: 0 10px;
+        margin-top: 15px;
+    }
+    .m-services-content img.left {
+        margin: auto;
+    }
+    .section-mob {
+        margin-top: 20px;
+    }
+    .m-services-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .slick-prev {
+        background-position: 8px 5px;
+        background-size: 12px;
+    }
+    .slick-next {
+        background-size: 12px;
     }
     .m-values-title{
         font-size: 26px;
     }
-    .m-values-content .m-item{
-        margin: 0;
+    .m-values-content .m-item {
+        /* margin: auto; */
+        width: 100%;
+        max-width: 180px;
+        margin: auto;
     }
     .m-values-content .m-item img{
-width: 52%;
+        width: 100%;
+        max-width: 60px;
     }
     .m-values-content .m-item .m-value{
         margin-top: 11px;
     }
     .m-banner.banner-valores{
+        background: url(./assets/img/background-banner-valores-mob.png) no-repeat center center;
         height: 320px;
+        padding: 10px 0;
     }
     .m-info p{
         padding: 16px;
@@ -4316,6 +4506,68 @@ padding: 10px 0;
     height: 217px;
     background-size: cover;
 }
+.m-banner.banner-servicios {
+    background: url(./assets/img/background-banner-services-mob.png) no-repeat center center;
+    width: 100%;
+    height: 113px;
+    background-size: cover;
+}
+.m-banner.banner-servicios-fondo {
+    background: url(./assets/img/background-banner-services-fondo-mob.png) no-repeat center center;
+    height: 2115px;
+    background-size: cover;
+    padding: 1px 0;
+}
+.m-banner.banner-galeria {
+    background: url(./assets/img/background-banner-gallery-mob.png) no-repeat center center;
+    width: 100%;
+    height: 113px;
+    background-size: cover;
+}
+.m-banner.banner-contacto {
+    background: url(./assets/img/background-banner-contact-mob.png) no-repeat center center;
+    width: 100%;
+    height: 113px;
+    background-size: cover;
+}
+.m-form {
+    max-width: 302px;
+    padding: 20px;
+    background-size: 302px 74px;
+}
+.m-form h2 {
+    font-size: 26px;
+}
+.m-services-body {
+    width: 100%;
+    text-align: center;
+}
+.m-service-img {
+    margin: 10px auto 20px;
+}
+.m-service-btn {
+    margin-bottom: 15px;
+}
+footer {
+    background: url(./assets/img/background-footer-mob.png) no-repeat;
+    height: 489px;
+}
+footer .m-container {
+    padding: 1px 0 0;
+}
+.m-container .m-footer-top {
+    display: block;
+    text-align: center;
+}
+.logo-footer {
+    max-width: 182px;
+}
+.m-35 {
+    margin: 20px auto;
+}
+.social-mob {
+    margin: auto;
+}
 .m-service-content{
     flex-direction: column;
 }
@@ -4337,19 +4589,25 @@ border-radius: 4px;
         
 display: inline-block;
     }
+    .m-last {
+        margin-top: 0px;
+        height: 300px;
+    }
+    .m-last-mob {
+        text-align: left;
+    }
     .m-last img{
-        width: 200px;
+        width: 233px;
+        height: 216px;
+        margin-left: 20px;
     }
     .m-info{
-
-width: 160px;
-
-height: 160px;
-
-margin: 75px;
-
+        width: 160px;
+        height: 160px;
+        margin: auto 0px;
+        bottom: 125px;
+        left: 180px;
     }
-    
     .header-top-area .container .row div.header-left {
         text-align:left;
         margin-left: 0;
@@ -4404,13 +4662,17 @@ margin: 75px;
         font-size: 12px;
         padding: 5px;
     }
+    .slick-prev, .slick-next {
+        width: 30px;
+        height: 30px;
+    }
     .slick-next {
-        right: 7px;
-        top: 210px;
+        right: 15px;
+        top: -17px;
     }
     .slick-prev {
-        left: 7px;
-        top: 210px;
+        left: 17px;
+        top: -17px;
     }
     .laundryka-about-area .back-img {
         display: block;

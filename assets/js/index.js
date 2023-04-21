@@ -37,7 +37,7 @@ $('.m-gallery-imgs').slick({
     centerPadding: '0px',
     responsive: [
         {
-          breakpoint: 450,
+          breakpoint: 768,
           settings: {
             dots: false,
             slidesToShow: 1,  

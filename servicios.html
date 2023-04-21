@@ -19,37 +19,41 @@
 	<link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
-		<div class="header-top-menu-area">
-			<div class="container">
-				<div class="row">
-					<!-- logo start -->
-					<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 logo-start">
-						<div class="header-logo">
-							<a href="index.html"><img src="assets/img/proclean-logo.png" alt="logo" class="img-fluid"></a>
-						</div>
+	<div class="header-top-menu-area">
+		<div class="container">
+			<div class="row">
+				<!-- logo start -->
+				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 logo-start">
+					<div class="header-logo wow">
+						<a href="index.html"><img src="assets/img/proclean-logo.png" alt="logo" class="img-fluid"></a>
 					</div>
-					<!-- main menu area start -->
-					<div class="col-xl-10 col-lg-10 col-md-9 col-sm-9">
-						<div class="main-menu-area text-center">
-							<div class="main-menu">
-								<nav id="mobile-menu">
-									<ul class="header-sub-area">
-										<li><a href="/">Inicio</a></li>
-										<li><a href="/servicios.html">Servicios <span class="line"></span></a></li>
-										<li><a href="/galeria.html">Galería</a></li>
-										<li><a href="contacto.html">Contacto</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 p-0">
-						<div class="mobile-menu"></div>
-					</div>
-					<!-- main menu area end -->
 				</div>
+				<!-- main menu area start -->
+				<div class="col-xl-10 col-lg-10 col-md-9 col-sm-9">
+					<div class="main-menu-area text-center">
+						<div class="main-menu">
+							<nav id="mobile-menu">
+								<ul class="header-sub-area">
+									<li><a href="/">Inicio <span class="line"></span></a></li>
+									<li><a href="/servicios.html">Servicios</a></li>
+									<li><a href="/galeria.html">Galería</a></li>
+									<li><a href="/contacto.html">Contacto</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 p-0">
+					<div class="mobile-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<!-- main menu area end -->
 			</div>
 		</div>
+	</div>
 		<section>
 			<div class="m-banner banner-servicios">
 			  <div class="m-container">
@@ -58,7 +62,7 @@
 			  </div>
 			</div>
 		  </section>
-          <section>
+          <section class="section-mob">
             <h1 class="m-services-title wow fadeInUp">NUESTROS SERVICIOS</h1>
             <div class="m-banner banner-servicios-fondo">
                 <div class="m-services-content">
@@ -83,7 +87,7 @@ los artículos que se almacenan.
                     <img class="left wow fadeInRight" src="./assets/img/img-services-industrial.png" alt="industrial">
                 </div>
                 <div class="m-services-content">
-                    <img class="wow fadeInLeft" src="./assets/img/img-services-domestic.png" alt="domestic">
+                    <img class="wow fadeInLeft desk" src="./assets/img/img-services-domestic.png" alt="domestic">
                     <div class="m-services-body wow fadeInRight">
                         <span class="m-services-subtitle" style="color: #1D4389;">Limpieza doméstica</span>
                         <div class="m-text-slide domestica">
@@ -102,6 +106,7 @@ los artículos que se almacenan.
                                 valor agregado de confort y seguridad en la comodidad de su hogar.</p>
                         </div>
                     </div>
+					<img class="wow fadeInLeft mob" src="./assets/img/img-services-domestic-mob.png" alt="domestic">
                 </div>
                 <div class="m-services-content">
                     <div class="m-services-body wow fadeInLeft">
@@ -121,7 +126,7 @@ los artículos que se almacenan.
                     <img class="left wow fadeInRight" src="./assets/img/img-services-fumigacion.png" alt="fumigacion">
                 </div>
                 <div class="m-services-content">
-                    <img class="wow fadeInLeft" src="./assets/img/img-services-garden.png" alt="Jardinería">
+                    <img class="wow fadeInLeft desk" src="./assets/img/img-services-garden.png" alt="Jardinería">
                     <div class="m-services-body wow fadeInRight">
                         <span class="m-services-subtitle" style="color: #37AD68;">Jardinería</span>
                         <div class="m-text-slide jardineria">
@@ -136,6 +141,7 @@ los artículos que se almacenan.
                                     <p>Contamos con personal calificado y con experiencia en jardinería para garantizar un buen trabajo.</p>
                         </div>
                     </div>
+					<img class="wow fadeInLeft mob" src="./assets/img/img-services-garden-mob.png" alt="Jardinería">
                 </div>
             </div>
           </section>
@@ -144,7 +150,7 @@ los artículos que se almacenan.
 			  <div class="m-footer-top wow fadeInUp">
 				<ul>
 				  <li class="m-35">
-					<a href="/"><img src="./assets/img/icon-logo-footer.svg" alt="Logo Mi Cancha" /></a>
+					<a href="/"><img class="logo-footer" src="./assets/img/icon-logo-footer.svg" alt="Logo Pro Clean" /></a>
 				  </li>
 	  
 
@@ -162,27 +168,29 @@ los artículos que se almacenan.
 				</ul>
 	  
 				<ul>
-				  <li>Contacto</li>	  
-				  <li><a href="tel:+51965393694"><img src="./assets/img/icon-phone.svg" alt=""> 965 393 694</a></li>
-				  <li><a href="mailto:hola@proclean.com"><img src="./assets/img/icon-mail.svg" alt=""> correo</a></li>
-				  <li><a href="https://goo.gl/maps/MH3SRegPZrduhWdB7" target="_blank"><img src="./assets/img/icon-location.svg" alt=""> Lima, Per&uacute;</a></li>
+				  <li>CONTACTO</li>	  
+				  <li><a href="tel:+51965393694"><img  class="icon" src="./assets/img/icon-phone.svg" alt=""> 965 393 694</a></li>
+				  <li><a href="mailto:hola@proclean.com"><img  class="icon" src="./assets/img/icon-mail.svg" alt="">correo@procleaning.com</a></li>
+				  <li><a href="https://goo.gl/maps/MH3SRegPZrduhWdB7" target="_blank"><img class="icon" src="./assets/img/icon-location.svg" alt=""> Lima, Per&uacute;</a></li>
 				</ul>
 	  
 				<ul>
 				  <li>SÍGUENOS</li>
 				  <li>
 					<ul class="social-container">
-					  <li>
-						<a href=""><img src="./assets/img/icon-ig.svg" alt="Instagram" /></a>
-					  </li>
-	  
-					  <li>
-						<a href=""><img src="./assets/img/icon-fb.svg" alt="Facebook" /></a>
-					  </li>
-	  
-					  <li>
-						<a href=""><img src="./assets/img/icon-twitter.svg" alt="Twitter" /></a>
-					  </li>
+<div class="social-mob">
+						  <li>
+							<a href=""><img src="./assets/img/icon-ig.svg" alt="Instagram" /></a>
+						  </li>
+		  
+						  <li>
+							<a href=""><img src="./assets/img/icon-fb.svg" alt="Facebook" /></a>
+						  </li>
+		  
+						  <li>
+							<a href=""><img src="./assets/img/icon-twitter.svg" alt="Twitter" /></a>
+						  </li>
+</div>
 					</ul>
 				  </li>
 				  <li>
