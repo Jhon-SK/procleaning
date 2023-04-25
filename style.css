@@ -3638,14 +3638,54 @@ background-repeat: no-repeat;
     
 overflow: auto;
 }
+.m-form.success {
+    width: 219px;
+    height: 144px;
+    background-size: contain;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+.m-form.warning {
+    width: 233px;
+    height: 157px;
+    background-size: contain;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
 .m-form h2{
     font-size: 32px;
     color: #ffffff;
     font-family: 'Quicksand';
     font-weight: 700;
+    text-align: center;
 }
 .m-form form{
     margin: 52px 0 0 0;
+}
+.m-form.success, .m-form.warning {
+    display: none;
+}
+.m-form.success form {
+    margin: 0px;
+    text-align: center;
+    margin-top: 20px;
+    color: #1D4389;
+}
+.m-form.success form p:first-child {
+    color:#1D4389;
+    font-family: 'CenturyGothic';
+    margin-bottom: 0px;
+}
+.m-form.success form p:last-child {
+    font-size: 16px;
+    color: #6D6D6D;
+    /* margin-bottom: 0px; */
+    line-height: 20px;
+    font-family: 'CenturyGothic';
 }
 .m-form input{
     background: #FFFFFF;
@@ -4280,24 +4320,30 @@ img.mob {
         background-size: 46px 40px;
         position: relative;
         top: 6px;
+        margin-left: 0px;
     }
     .m-gallery-title.second::after {
         background-size: 39px 39px;
         position: relative;
         top: 6px;
+        margin-left: 0px;
     }
     .m-gallery-title.third::after {
         background-size: 39px 39px;
         position: relative;
         top: 6px;
+        margin-left: 0px;
     }
     .m-gallery-title.four::after {
         background-size: 39px 39px;
         position: relative;
         top: 6px;
+        margin-left: 0px;
     }
     .m-gallery-title {
         font-size: 26px;
+        display: flex;
+        justify-content: center;
     }
     .m-gallery-content {
         font-size: 16px;
