@@ -3439,6 +3439,14 @@ ul.contact-info li a {
 .m-gallery-imgs img {
     max-width: 420px;
 }
+.m-services-imgs {
+    width: 660px;
+    margin: auto;
+    margin-left: 60px;
+}
+.m-services-imgs img {
+    max-width: 360px;
+}
 .m-gallery-imgs img.scnd {
     max-width: 420px;
     height: 280px;

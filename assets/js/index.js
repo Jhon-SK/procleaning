@@ -55,7 +55,35 @@ $(document).ready(function(){
       }
   ]
 });
-
+$('.m-services-imgs').slick({
+  slidesToShow: 1,
+  infinite: true,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  centerMode: false,
+  autoplay: true,
+  centerPadding: '0px',
+  responsive: [
+      {
+        breakpoint: 450,
+        settings: {
+          dots: false,
+          slidesToShow: 1,  
+          centerPadding: '0px',
+          }
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          autoplay: true,
+          dots: false,
+          slidesToShow: 1,
+          centerMode: false,
+          }
+      }
+  ]
+});
 $('.m-gallery-imgs').slick({
   slidesToShow: 2,
   infinite: false,
