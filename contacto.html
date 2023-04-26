@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 	<div class="header-top-menu-area">
@@ -34,10 +35,10 @@
 						<div class="main-menu">
 							<nav id="mobile-menu">
 								<ul class="header-sub-area">
-									<li><a href="https://creasoft.com.pe/procleaning/">Inicio</a></li>
-									<li><a href="https://creasoft.com.pe/procleaning/servicios">Servicios</a></li>
-									<li><a href="https://creasoft.com.pe/procleaning/galeria">Galería</a></li>
-									<li><a href="https://creasoft.com.pe/procleaning/contacto">Contacto <span class="line"></span></a></li>
+									<li><a href="/">Inicio</a></li>
+									<li><a href="/procleaningservicios.html">Servicios</a></li>
+									<li><a href="/procleaninggaleria.html">Galería</a></li>
+									<li><a href="/procleaningcontacto.html">Contacto <span class="line"></span></a></li>
 								</ul>
 							</nav>
 						</div>
@@ -51,10 +52,10 @@
 					</div>
 					<nav class="mob-menu">
 						<ul>
-							<li><a href="https://creasoft.com.pe/procleaning/">Inicio</a></li>
-							<li><a href="https://creasoft.com.pe/procleaning/servicios">Servicios</a></li>
-							<li><a href="https://creasoft.com.pe/procleaning/galeria">Galería</a></li>
-							<li><a href="https://creasoft.com.pe/procleaning/contacto">Contacto <span class="line contact"></span></a></li>
+							<li><a href="/">Inicio</a></li>
+							<li><a href="/procleaning/servicios.html">Servicios</a></li>
+							<li><a href="/procleaning/galeria.html">Galería</a></li>
+							<li><a href="/procleaning/contacto.html">Contacto <span class="line contact"></span></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -90,19 +91,19 @@
 						<form autocomplete="off">
 							<fieldset>
 								<label for="nombre">Nombres y apellidos</label>
-								<input type="text" name="nombre" id="nombre">
+								<input type="text" name="nombre" id="nombre" maxlength="25">
 							</fieldset>
 							<fieldset>
 								<label for="telefono">Telefono</label>
-								<input type="number" name="telefono" id="telefono">
+								<input type="number" name="telefono" id="telefono" maxlength="9">
 							</fieldset>
 							<fieldset>
 								<label for="email">Correo electronico</label>
-								<input type="text" name="email" id="email">
+								<input type="text" name="email" id="email" maxlength="25">
 							</fieldset>
 							<fieldset>
 								<label for="email">Mensaje</label>
-								<textarea name="message" id="message"></textarea>
+								<textarea name="message" id="message" maxlength="50"></textarea>
 							</fieldset>
 							<button type="submit" class="btn-submit btn-circl">Enviar</button>
 						</form>
@@ -138,6 +139,7 @@
 				</form>
 			</div>
 		  </div>
+		  <div class="g-recaptcha" data-sitekey="6LfDB-okAAAAAA7cxcL59ITROZgRELNVV6x2Rq-W" data-callback="OnSubmit" data-size="invisible"></div>
 		  <footer>
 			<div class="m-container">
 			  <div class="m-footer-top wow fadeInUp">
@@ -199,7 +201,6 @@
 			<a href="https://wa.me/51999123456" target="_blank"><img src="./assets/img/icon-wsp.svg" alt=""></a>
 		</div>
         <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-
         <script type="text/javascript" src="./assets/js/slick.min.js"></script>       
          <script type="text/javascript" src="./assets/js/index.js"></script>
 		 <script src="./assets/js/wow.min.js"></script>

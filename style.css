@@ -3498,6 +3498,15 @@ ul.contact-info li a {
     max-width: 1170px;
     height: inherit;
 }
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
 .m-container-galery{
     margin: auto;
     width: 100%;
@@ -3619,24 +3628,15 @@ left: -127px;
     text-align: center;
 }
 .m-form{
-    
-width: 425px;
-    
-height: 588px;
-    
-background: #FFFFFF;
-    
-border-radius: 20px;
-    
-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.25));
-    
-padding: 29px 82px 16px 82px;
-    
-background-image: url(./assets/img/border-form.png);
-    
-background-repeat: no-repeat;
-    
-overflow: auto;
+    width: 425px;
+    height: 555px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.25));
+    padding: 29px 82px 16px 82px;
+    background-image: url(./assets/img/border-form.png);
+    background-repeat: no-repeat;
+    overflow: auto;
 }
 .m-form.success {
     width: 219px;
@@ -3696,6 +3696,7 @@ overflow: auto;
     padding: 0 10px;
     font-size: 16px;
     color: #414141;
+    font-family: 'CenturyGothic';
 }
 .m-form textarea{
     background: #FFFFFF;
@@ -3704,6 +3705,7 @@ overflow: auto;
     width: 100%;
     height: 85px;
     padding: 4px 10px;
+    font-family: 'CenturyGothic';
 }
 .m-form label{
     
@@ -4276,6 +4278,9 @@ img.mob {
 .m-contacto-subtittle.mob {
     display: none;
 }
+input.border-warning{
+    border: 1px solid #ff000059;
+}
 @media (max-width: 360px) {
 
 }
@@ -4664,6 +4669,7 @@ padding: 10px 0;
 footer {
     background: url(./assets/img/background-footer-mob.png) no-repeat;
     height: 489px;
+    background-size: cover;
 }
 footer .m-container {
     padding: 1px 0 0;

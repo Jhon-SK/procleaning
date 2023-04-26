@@ -9,24 +9,9 @@
 
 
 $(document).ready(function(){
-  $('#numero_documento').maxlength({max: 8, showFeedback: false});
-  $('#nombre').maxlength({max: 50, showFeedback: false});
-  $('#telefono').maxlength({max: 9, showFeedback: false});
-  $('#lugar').maxlength({max: 50, showFeedback: false});
-  $('#requerimientos').maxlength({max: 200, showFeedback: false});
-  
-  $("#tipo_documento").change(function(){
-      $("#divInputTipDoc").html("");
-      $("#divInputTipDoc").html('<input type="number" class="form-control" placeholder="DNI O RUC" style="background-color: #F4F7FB; color:#373737; font-weight: bold;" id="numero_documento" name="numero_documento" required>' +
-                                  '<label for="floatingInput" style="color: #B2B1B9; font-weight: bold;" required>DNI O RUC</label>');
-      if( $(this).val() == "DNI" )
-      {
-          $('#numero_documento').maxlength({max: 8, showFeedback: false});
-      }
-      else 
-      {
-          $('#numero_documento').maxlength({max: 11, showFeedback: false});
-      }
+  $("input").on("input", function () {
+    this.value.length > this.maxLength &&
+      (this.value = this.value.slice(0, this.maxLength));
   });
   
   $('#nombre').keypress(function(){
@@ -135,70 +120,41 @@ $("#tipo_documento").change(function(){
  }
 });
 
-$('#nombre').keypress(function(){
- lettersOnly();
-});
-
-function lettersOnly(e) 
-{
- var charCode = e.keyCode;
- if ((charCode > 64 && charCode < 91) || charCode == 32 || (charCode > 96 && charCode < 123) || charCode == 8)
-     return true;
- else
-     return false;
-
-}
 function closePopup(){
 $('.popup').fadeOut();
 }
-$('.btn-submit').on('click',function(){
-var response = grecaptcha.getResponse();
-if (response.length == 0){
-alert("Debe rellenar el captcha");
+
+$('form').submit(function(event){
+  event.preventDefault()
+  
+  _name = $(this).find('[name="nombre"]')
+  _phone = $(this).find('[name="telefono"]')
+  _email = $(this).find('[name="email"]')
+  _message = $(this).find('[name="message"]')
+  if (!phonevalidator(_phone.val())){
+      _phone.addClass('border-warning')
+  } else if (!ValidateEmail(_email.val())){
+    _email.addClass('border-warning')
+} else if (!itsempyornull(_message.val())){
+  _message.addClass('border-warning')
+} else if (!itsempyornull(_name.val())){
+  _name.addClass('border-warning')
 } else {
-$('.btn-submit').attr("disabled", true);
-let NAME = $('#nombre').val();
-let LASTNAME = $('#lastname').val();
-let EMAIL = $('#email').val();
-let PHONE = $('#telefono').val();
-let MESSAGE = $('#lugar').val();
-let data = {
-name : NAME,
-lastname : LASTNAME,
-email : EMAIL,
-phone : PHONE,
-message : MESSAGE,
-}
-let datajson = JSON.stringify(data)
-$('input').attr("disabled", true);
-$.ajax({
-url : './enviar.php',
-method : 'POST',
-contentType: "application/json",
- data: datajson,
- success: function (res) {
-  $('.text-danger').text('');
-  if (res.estado == 0){
-   for (const key in res.mensaje[0]) {
-    $('#'+key).text(res.mensaje[0][key])
-   }
-  } else {
-  $('#nombre').val('');
-  $('#lastname').val('');
-  $('#email').val('');
-  $('#telefono').val('');
-  $('#lugar').val('');
-  $('.popup').fadeIn('');
-  grecaptcha.reset();
+      grecaptcha.execute();
   }
-  $('.btn-submit').attr("disabled", false);
-  $('input').attr("disabled", false);
-},
-error: function (err) {
-console.log(err)
-$('.btn-submit').attr("disabled", false);
-$('input').attr("disabled", false);
-}
 })
+
+function phonevalidator(value){
+  if (value='' || value.length < 9 || value ===' '){
+      return false
+  } else{
+      return true
+  }
 }
-})
+function ValidateEmail(value) {
+  return !!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
+}
+function itsempyornull(val) {
+  return "" === val || " " === val || null === val;
+}
+
