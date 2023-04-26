@@ -88,6 +88,9 @@ $('.m-gallery-imgs').slick({
 $(".mobile-menu").click(function(){
   $(".mob-menu").toggleClass("active");
 });
+$(".main-menu nav ul li a").hover(function(){
+  $(this).find(".line").toggleClass("active");
+})
 $(".btn-more").click(function(e){
 $(this).parent().prev().find('.more').fadeToggle();
 $(this).parent().prev().find('.dots').toggle();
