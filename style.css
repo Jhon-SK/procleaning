@@ -4451,6 +4451,11 @@ input.border-warning{
         width: 100%;
         text-align: center;
     }
+    .m-services-imgs {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
     .m-gallery-imgs .slick-next {
         right: 10px;
     }
