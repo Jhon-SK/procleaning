@@ -3729,6 +3729,17 @@ color: #ffffff;
 display: block;
 margin: auto;
 }
+.mean-container .mean-nav {
+    background: #0c1923;
+    float: left;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 174px;
+    margin-left: -15px;
+}
+.mean-container a.meanmenu-reveal {
+    margin-top: -10px;
+}
 .banner-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4028,7 +4039,9 @@ footer .copy {
     background-color: #37AD68;
 }
 
-
+.mob-menu {
+    display: none;
+}
 .whatsapp {
     width: 56px;
     height: 56px;
@@ -4135,7 +4148,7 @@ ul.header-sub-area {
     font-size: 1px;
     font-weight: 700;
     line-height: 22px;
-    margin-top: -62px !important;
+    margin-top: -10px !important;
     margin-right: 15px;
     /* margin-bottom: -36px; */
     /* margin-bottom: -100px; */
@@ -4286,6 +4299,60 @@ img.mob {
     }
 }
 @media (max-width: 768px) {
+    span.line.home {
+        width: 56px;
+        margin: auto;
+    }
+    span.line.services {
+        width: 100px;
+        margin: auto;
+    }
+    span.line.gallery {
+        width: 75px;
+        margin: auto;
+    }
+    span.line.contact {
+        width: 94px;
+        margin: auto;
+    }
+    
+.mob-menu.active {
+    display: block;
+}
+    .mob-menu {
+    position: fixed;
+    width: 174px;
+    height: 187px;
+    background: #FFFFFF;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px 0px 10px 10px;
+    right: 25px;
+    top: 85px;
+    text-align: center;
+    font-size: 20px;
+    color: #1D4389;
+    font-weight: 600;
+    font-family: 'Quicksand';
+    }
+    .mob-menu ul {
+        height: auto;
+    }
+    .mob-menu ul li {
+        height: 46.75px;
+        border: 1px #F1F1F1 solid;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 0;
+        padding: 7px;
+    }
+    .mob-menu ul li:first-child {
+        border-top: none;
+        border-bottom: 1px #F1F1F1 solid;
+    }
+    .mob-menu ul li:last-child {
+        border-top: 1px solid #F1F1F1;
+        border-bottom: none;
+    }
     .m-contacto-subtittle.desk {
         display: none;
     }
