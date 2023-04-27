@@ -1,63 +1,11 @@
-/*
-  Theme Name: Laundryka - Dry Cleaning Services HTML5 Template v-2
-  Author: theme_group
-  Support: robiulislamfree@gmail.com
-  Description: laundryka is a HTML5 template which fits for all kind of Charity, Fund raising, Nonprofit, NGO, Social Working, and other non-profit website for all your needs.
-  Tags: clean, cleaner, cleaning, Cleaning Business, Cleaning Service, clothing repair, dry cleaning, ironing, laundry, laundry press, laundry psd template, laundry service, wash, wash business, washing
-  Version: 1.2
-*/
-/* CSS Index
------------------------------------
- /* 
-1.	Theme Default
-2.	Pre Loader
-3.	Header Top Area Css Style
-4.	Header Top Menu Area Css Style
-		i. main menu area css
-		ii. sub menu area css
-		iii. search form area css
-5.	Laundryka Slider Area Css Style
-		i. Laundryka Slider2 Area Css Style
-6.	Laundryka Workes Steap Area Css Style
-		i. Laundryka Workes Steap Style2 Area Css Style
-7.	Laundryka About area css
-8.	Laundryka Services Area css
-		i. Laundryka Services2 Area css
-		ii. Laundryka App cta Area css
-9.	Laundryka Testimonial Area css
-10.	Laundryka Pricing Table Area css
-11.	Laundryka Counter Area css
-12.	Laundryka Team Area css
-13.	Laundryka CTA Area css
-14.	Laundryka Blog Area css
-		i. Post Date Admin Comments Number Area Css Style
-		ii. Blog Quote Area Css Style
-		iii. Post Tags Area Css Style
-		iv. Blog Comments Area Css Style
-		iv. Blog Comments Form Area Css Style
-15.	Laundryka Footer Area css
-16.	Footer Copyright Area css
-17.	Laundryka breadcrumb area css
-18.	Laundryka Shop Area css
-	i. Shop Quantity Style Css
-	ii. Product Meta area style css
-	iii. Product Rivew Area Style Css
-19.	Contact Form Area Css Style
-20.	Google Map Area Css Style
-21.	Contact Info  Area Css Style
-21.	Laundryka Error Area Css Style
-
- */
-
-/* Google Fonts */
-  @font-face {
+ @font-face {
     font-family: Quicksand;
     src: url(./assets/font/Quicksand-Medium.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
-  @font-face {
+ @font-face {
     font-family: CenturyGothic;
     src: url(./assets/font/CenturyGothic.ttf);
     font-weight: normal;
@@ -74,11 +22,9 @@
     line-height: inherit;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
-    font-family: "BebasKai";
 }
 
 body {
-    font-family: 'BebasKai', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -88,10 +34,10 @@ img {
     height: auto;
     transition: all 0.3s ease-out 0s;
 }
-a {
+/* a {
     font-family: 'BebasKai', sans-serif;
 
-}
+} */
 a,
 .button,
 .btn {
@@ -3477,6 +3423,17 @@ button.m-service-btn:hover {
     height: 659px;
     background-size: cover;
 }
+.banner-text {
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    border: none;
+    text-shadow: 1px 15px 10px rgba(0, 0, 0, .25);
+}
+.m-banner.banner-galeria .banner-text {
+    margin-top: 30px;
+}
 .m-banner.banner-servicios {
     background: url(./assets/img/background-banner-services.webp) no-repeat center center;
     width: 100%;
@@ -3525,7 +3482,7 @@ input::-webkit-outer-spin-button {
 }
 .m-gallery-content{
 
-font-size: 24px;
+font-size: 22px;
 
 margin-top: 18px;
 font-family: 'Quicksand';
@@ -3533,7 +3490,7 @@ font-family: 'Quicksand';
 }
 .m-gallery-title{
 
-font-size: 50px;
+font-size: 46px;
 
 margin-top: 10px;
 
@@ -3577,40 +3534,39 @@ color: #E87722;
     
 color: #37AD68;
 }
-.m-gallery-title.first::after{
+.m-gallery-title.first::before{
     content: '';
     background: url(./assets/img/icon-maquina.svg)no-repeat center center;
     width: 78px;
     height: 68px;
     display: inline-block;
-    margin-left: 21px;
+    margin-right: 20px;
 }
-.m-gallery-title.second::after{
-    content: '';
+.m-gallery-title.second::before{
     content: '';
     background: url(./assets/img/icon-limpieza.png)no-repeat center center;
     width: 78px;
     height: 68px;
     display: inline-block;
-    margin-left: 21px;
+    margin-right: 20px
 }
-.m-gallery-title.third::after{
+.m-gallery-title.third::before{
     content: '';
     content: '';
     background: url(./assets/img/icon-fumigacion.png)no-repeat center center;
     width: 78px;
     height: 68px;
     display: inline-block;
-    margin-left: 21px;
+    margin-right: 20px;
 }
-.m-gallery-title.four::after{
+.m-gallery-title.four::before{
     content: '';
     content: '';
     background: url(./assets/img/icon-jardineria.png)no-repeat center center;
     width: 78px;
     height: 68px;
     display: inline-block;
-    margin-left: 21px;
+    margin-right: 20px;
 }
 .m-gallery-imgs .slick-next, .m-gallery-imgs .slick-prev{
     background-color: #1D428A;
@@ -3773,9 +3729,7 @@ margin: auto;
     align-items: center;
     height: 100%;
     color: #fff;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    text-align: center;
     margin: auto;
 }
 .contact-content{
@@ -3801,19 +3755,19 @@ margin: auto;
 .contact-list li::before{
     content: '';
 }
-.contact-list li:nth-child(1)::before{
+.contact-list a:nth-child(1) li::before{
     background: url(./assets/img/icon-phone.png) no-repeat center center;
     width: 39px;
     height: 39px;
     margin-right: 16px;
 }
-.contact-list li:nth-child(2)::before{
+.contact-list a:nth-child(2) li::before{
     background: url(./assets/img/icon-msg.png);
     width: 39px;
     height: 30px;
     margin-right: 16px;
 }
-.contact-list li:nth-child(3)::before{
+.contact-list a:nth-child(3) li::before{
     background: url(./assets/img/icon-ubicacion.png);
     width: 39px;
     height: 51px;
@@ -3971,9 +3925,9 @@ footer {
     width: 100%;
     height: -webkit-max-content;
     height: -moz-max-content;
-    height: 288px;
+    height: 290px;
     color: #fff;
-    font-family: 'BebasKai', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 footer .m-container {
     padding: 90px 0 0 0;
@@ -4320,6 +4274,23 @@ input.border-warning{
     }
 }
 @media (max-width: 768px) {
+    .banner-text {
+        font-size: 24px;
+        padding: 37px;
+    }
+    .m-banner.banner-benefics .banner-text {
+        font-size: 26px;
+        line-height: 30px;
+        margin-right: 36%;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+    }
+    .m-banner.banner-galeria .banner-text {
+        margin-top: 0px;
+        text-shadow: 0px 1px 15px rgba(0, 0, 0, .3);
+    }
+    .m-banner.banner-contacto .banner-text {
+        padding: 46px;
+    }
     .m-values-content .m-item:first-child .m-value {
         margin-top: 25px;
         margin-bottom: 0px;
