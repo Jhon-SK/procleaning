@@ -3377,13 +3377,14 @@ ul.contact-info li a {
 }
 .m-services-content img {
     margin: auto;
-    margin-right: 120px;
+    margin-right: 0px;
 }
 .m-services-content img.left {
-    margin-left: 120px;
+    margin-left: 0px;
 }
 .m-gallery-imgs img {
     max-width: 420px;
+    border-radius: 20px
 }
 .m-services-imgs {
     width: 660px;
@@ -3429,7 +3430,7 @@ button.m-service-btn:hover {
     font-family: 'Quicksand';
     font-weight: 600;
     border: none;
-    text-shadow: 1px 15px 10px rgba(0, 0, 0, .25);
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, .25);
 }
 .m-banner.banner-galeria .banner-text {
     margin-top: 30px;
@@ -4432,10 +4433,13 @@ input.border-warning{
     }
     .m-gallery-imgs img {
         max-width: 250px;
+    width: 250px;
+    height: 166px;
     }
     .m-gallery-imgs img.scnd {
-        max-width: 150px;
-        max-height: 167px;
+        max-width: 250px;
+    width: 250px;
+    height: 166px;
     }
     img.desk {
         display: none;
